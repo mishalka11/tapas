@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotCoin Web App</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .coin {
+            width: 150px;
+            height: 150px;
+            background-image: url('coin.png'); /* URL к вашей новой монетке */
+            background-size: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .score {
+            font-size: 2em;
+        }
+        .coin.pressed {
+    transform: scale(0.9); /* уменьшение масштаба для эффекта нажатия */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coin" id="coin"></div>
+        <div class="score" id="score">0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
